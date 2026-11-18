@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Maison Léone — des soins aux plantes, et rien à cacher</title>
+<meta name="description" content="Maison Léone, cosmétiques naturels fabriqués en France. Chaque flacon montre les plantes de sa formule.">
+<meta name="theme-color" content="#FCF6F0">
+<link rel="icon" href="assets/logo/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+</script>
+</head>
+<body>
+<noscript><p style="padding:6rem 1.5rem 2rem;max-width:40rem;margin:auto;font:1.1rem/1.5 sans-serif">Ce site a besoin de JavaScript pour afficher les soins. Activez-le dans votre navigateur, puis rechargez la page.</p></noscript>
+
+<div class="fond" aria-hidden="true"></div>
+<canvas id="scene" aria-hidden="true"></canvas>
+
+
+<main id="contenu">
+  <section id="accueil" class="accueil">
+    <h1>Des soins aux plantes,<br>et rien à cacher.</h1>
+    <div class="repli" aria-hidden="true"><img alt="" id="repli-img"></div>
+    <div class="choix">
+      <button class="fleche" id="avant" aria-label="Soin précédent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7"/></svg></button>
+      <div class="soin" aria-live="polite">
+        <p class="famille" id="h-famille"></p>
+        <h2 id="h-nom"></h2>
+        <p class="fonction" id="h-fonction"></p>
+        <p class="achat-h"><span class="px" id="h-prix"></span><button class="bouton" type="button" id="h-ajouter">Ajouter au panier</button><a class="lien" id="h-lien" href="soins.html">Voir ce soin</a></p>
+      </div>
+      <button class="fleche" id="apres" aria-label="Soin suivant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5l7 7-7 7"/></svg></button>
+    </div>
+    <div class="points" id="points" role="group" aria-label="Choisir un soin"></div>
+    <p class="defiler">Faites défiler : le flacon se retourne</p>
+  </section>
+
+  <section id="detail" class="detail" aria-label="Le soin en détail">
+    <div class="colle">
+      <div class="etapes">
+        <article class="etape" data-etape="0">
+          <h2>Tout commence par des plantes.</h2>
+          <p class="chapo">Celles que montre la fenêtre sont celles du flacon. Pas une de plus.</p>
+          <p class="plantes" id="d-plantes"></p>
+          <p class="suite"><a class="bouton d-lien" href="soins.html">Voir ce soin</a></p>
+        </article>
+        <article class="etape" data-etape="1">
+          <h2>Puis vient votre geste.</h2>
+          <p class="chapo" id="d-pourqui"></p>
+          <p id="d-geste"></p>
+          <p class="suite"><a class="bouton d-lien" href="soins.html">Voir ce soin</a></p>
+        </article>
+        <article class="etape" data-etape="2">
+          <h2>Et dedans, rien à cacher.</h2>
+          <p class="chapo recit" id="d-recit"></p>
+          <p class="suite"><a class="bouton d-lien" href="soins.html">Voir ce soin</a></p>
+        </article>
+      </div>
+      <div class="reperes" id="reperes" role="group" aria-label="Étapes du détail">
+        <button data-etape="0" aria-label="Les plantes"></button><button data-etape="1" aria-label="Le geste"></button><button data-etape="2" aria-label="La formule"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="familles" class="familles">
+    <div class="colle">
+      <h2>Visage, corps, cheveux : par où commencer ?</h2>
+      <p class="chapo">Cinq familles de soins. Choisissez la vôtre, ou laissez le diagnostic composer votre routine.</p>
+      <ol class="rang" id="rang"></ol>
+    </div>
+  </section>
+
+  <section id="ventes" class="ventes plein">
+    <div class="interieur">
+      <div class="titre-l"><h2>Les meilleures ventes</h2><a class="lien" href="soins.html?selection=ventes">Voir le classement complet</a></div>
+      <p class="chapo">Les soins que l'on rachète le plus, toutes familles confondues. <small>Classement inventé pour la maquette.</small></p>
+      <ol class="tuiles" id="ventes-l"></ol>
+      <p class="suite-v"><a class="bouton fort" href="soins.html">Voir les 48 soins</a><a class="lien" href="diagnostic.html">Ou trouver les vôtres en trois questions</a></p>
+    </div>
+  </section>
+
+  <section class="portes plein" aria-labelledby="t-portes">
+    <div class="interieur">
+      <h2 id="t-portes">Trois façons de trouver votre soin</h2>
+      <a class="porte" href="diagnostic.html" style="--p-fond:#F0D8D2"><img src="assets/fen/confort.svg" alt="" loading="lazy"><span><b>Le diagnostic</b><i>Quelques questions, et une routine composée pour vous.</i><u>Commencer</u></span></a>
+      <a class="porte fonce" href="coffrets.html" style="--p-fond:#0C4236"><img src="assets/fen/sh-nature.svg" alt="" loading="lazy"><span><b>Les coffrets</b><i>Des soins qui vont ensemble, déjà choisis. Pour offrir.</i><u>Voir les coffrets</u></span></a>
+      <a class="porte" href="herbier.html" style="--p-fond:#C9D3BD"><img src="assets/fen/sh-vitalite.svg" alt="" loading="lazy"><span><b>L'herbier</b><i>Partez d'une plante : voici les soins qui la contiennent.</i><u>Ouvrir l'herbier</u></span></a>
+    </div>
+  </section>
+
+  <section id="maison" class="maison plein">
+    <div class="interieur deux">
+      <div>
+        <img class="lionne" src="assets/logo/leone-symbole-couleur.svg" alt="" width="120" height="120">
+        <h2>Léone, c'est la lionne.</h2>
+        <p class="grand">La lionne n'a pas de crinière. Ce sont les plantes qui la lui donnent : cinq feuilles, dessinées comme celles de nos étiquettes.</p>
+        <p>Maison Léone fabrique en France des soins naturels pour la peau et les cheveux, pensés pour tous les âges. Sur chaque flacon, une fenêtre montre ce que contient la formule.</p>
+      </div>
+      <ul class="valeurs">
+        <li><b>Éthique</b><span>Des engagements tenus, du sourcing à la boutique.</span></li>
+        <li><b>Passion</b><span>L'amour du geste de soin et de la matière vivante.</span></li>
+        <li><b>Innovation</b><span>La science au service du naturel, jamais l'inverse.</span></li>
+        <li><b>Intégrité</b><span>On dit ce que l'on met, on met ce que l'on dit.</span></li>
+        <li><b>Qualité</b><span>Des formules concentrées, testées, fabriquées en France.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="boutiques" class="boutiques plein">
+    <div class="interieur">
+      <h2>Chez vous ou en boutique, comme vous voulez.</h2>
+      <ul class="services">
+        <li><b>Livraison offerte dès 49 €</b><span>Vos soins chez vous sous 3 à 5 jours.</span></li>
+        <li><b>Retrait gratuit en boutique</b><span>Commandez ici, passez les prendre dans l'une des cinquante boutiques.</span></li>
+        <li><b>Essayez avant d'acheter</b><span>Réservez un soin, testez-le sur place, payez seulement si vous le gardez.</span></li>
+      </ul>
+      <p class="suite-b"><a class="bouton clair fort" href="boutiques.html">Trouver une boutique</a></p>
+    </div>
+  </section>
+
+  <section id="questions" class="questions plein">
+    <div class="interieur cote">
+      <h2>Questions fréquentes</h2>
+      <div>
+      <details><summary>Quel soin est fait pour moi ?</summary><p>Le <a href="diagnostic.html">diagnostic</a> vous le dit en trois ou quatre questions, et compose une routine que vous pouvez mettre au panier d'un geste. Vous pouvez aussi filtrer <a href="soins.html">les soins</a> par besoin : peau sensible, cheveux secs, teint terne…</p></details>
+      <details><summary>Puis-je essayer un soin avant de l'acheter ?</summary><p>Oui. Réservez-le depuis sa fiche : la boutique de votre choix le met de côté, vous l'essayez sur place et vous ne payez que si vous le gardez.</p></details>
+      <details><summary>Combien coûte la livraison ?</summary><p>Elle est offerte dès 49 € d'achat, et coûte 4,90 € en dessous. Le retrait en boutique est toujours gratuit.</p></details>
+      <details><summary>Comment savoir ce que contient un soin ?</summary><p>Regardez sa fenêtre : les plantes dessinées sont celles de la formule. Sa fiche nomme ensuite chaque ingrédient en français, des plantes à ce qui conserve le soin. La liste officielle de l'étiquette suit, telle qu'elle est imprimée.</p></details>
+      <details><summary>Que montre la fenêtre sur les étiquettes ?</summary><p>Les plantes et les matières de la formule, et seulement celles-là. Si la lavande est dessinée, elle est dans le flacon. Les noms sont repris juste sous le nom du soin.</p></details>
+      <details><summary>Pourquoi une lionne ?</summary><p>Léone veut dire lionne. La lionne n'a pas de crinière : notre logo lui en donne une, faite de cinq feuilles.</p></details>
+      <details><summary>Pourquoi des motifs d'animaux sur les flacons ?</summary><p>La lionne vient de la savane, ses voisins prêtent leurs motifs aux familles de soins : léopard pour le visage, herbes hautes pour le corps, zèbre pour les cheveux, girafe pour les argiles. Ils sont imprimés ton sur ton, on les devine plus qu'on ne les voit.</p></details>
+      <details><summary>Les soins conviennent-ils pendant la grossesse ?</summary><p>Pas tous. Plusieurs formules contiennent des huiles essentielles. La fiche de chaque soin et son étiquette indiquent les précautions à respecter.</p></details>
+      <details><summary>Où sont fabriqués les soins ?</summary><p>En France.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="lettre" class="lettre plein">
+    <div class="interieur cote">
+      <div><h2>Les nouvelles de la maison</h2>
+      <p>Une lettre par mois : un soin, une plante, un geste.</p></div>
+      <form id="inscription" novalidate>
+        <label for="mail">Votre adresse e-mail</label>
+        <div class="ligne"><input id="mail" name="mail" type="email" autocomplete="email" placeholder="prenom@exemple.fr" required><button class="bouton" type="submit">S'inscrire</button></div>
+        <p class="retour" id="retour" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+
+
+<div class="chargement" id="chargement" role="status" aria-live="polite">
+  <img src="assets/logo/leone-symbole-couleur.svg" alt="" width="96" height="96">
+  <p><span id="pourcent">0</span> %</p>
+</div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

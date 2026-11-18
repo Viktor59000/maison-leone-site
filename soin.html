@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Maison Léone — fiche d'un soin</title>
+<meta name="description" content="La fiche d'un soin Maison Léone, en trois dimensions.">
+<meta name="theme-color" content="#FCF6F0">
+<link rel="icon" href="assets/logo/favicon.ico" sizes="any">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+</script>
+</head>
+<body class="int">
+<noscript><p style="padding:6rem 1.5rem 2rem;max-width:40rem;margin:auto;font:1.1rem/1.5 sans-serif">Ce site a besoin de JavaScript pour afficher les soins. Activez-le dans votre navigateur, puis rechargez la page.</p></noscript>
+<main class="page" id="contenu">
+  <div class="interieur">
+    <p class="fil"><a href="soins.html">Les soins</a> › <a id="fil-famille" href="soins.html"></a> › <span id="fil-nom"></span></p>
+    <div class="fiche-p">
+      <div class="scene3d" id="scene3d">
+        <canvas id="vue" tabindex="0" role="img" aria-label=""></canvas>
+        <p class="charge" id="charge" role="status">Chargement du soin en 3D…</p>
+        <p class="astuce" id="astuce">Faites glisser pour tourner le soin</p>
+        <div class="vues" id="vues"></div>
+      </div>
+      <div class="infos">
+        <p class="famille" id="famille"></p>
+        <a class="palme" id="palme" href="soins.html?selection=ventes" hidden></a>
+        <h1 id="nom"></h1>
+        <p class="fonction" id="fonction"></p>
+        <div class="plantes-l" id="plantes"></div>
+        <div class="achat">
+          <p class="prix"><span id="prix"></span><small id="au-cent"></small></p>
+          <fieldset class="choix-c" id="contenances"><legend>Contenance</legend></fieldset>
+          <div class="ligne-a">
+            <div class="qte"><button type="button" id="moins" aria-label="Diminuer la quantité">−</button><output id="q" aria-live="polite">1</output><button type="button" id="plus" aria-label="Augmenter la quantité">+</button></div>
+            <button class="bouton fort" type="button" id="ajouter">Ajouter au panier</button>
+          </div>
+          <ul class="gages">
+            <li>Livraison offerte dès 49 € d'achat</li>
+            <li>Retrait gratuit dans 50 boutiques</li>
+            <li>Réservation en boutique, pour essayer avant d'acheter</li>
+          </ul>
+          <p class="fictif">Prix fictifs, pour la maquette.</p>
+        </div>
+        <section class="dispo" aria-labelledby="t-dispo">
+          <h2 id="t-dispo">En boutique</h2>
+          <label class="champ">Choisir une boutique<select id="boutique"></select></label>
+          <p class="etat" id="etat"></p>
+          <div class="ligne-a"><button class="bouton second" type="button" id="reserver">Réserver pour l'essayer</button><a class="lien" id="voir-boutiques" href="boutiques.html">Voir les 50 boutiques</a></div>
+        </section>
+        <div class="replis">
+          <details open id="bloc-pourqui"><summary>Pour qui</summary><p id="pourqui"></p></details>
+          <details open><summary>Le geste</summary><p id="geste"></p></details>
+          <details><summary>Précautions</summary><p id="precautions"></p></details>
+          <details open><summary>Ce qu'il y a dedans</summary><p class="entree-c" id="recit"></p><dl class="compo" id="clair"></dl></details>
+          <details><summary>La liste de l'étiquette</summary><p style="font-size:.88rem;color:#4F5A3E;padding-bottom:.5rem">Les mêmes ingrédients sous leur nom officiel, tels qu'ils sont imprimés sur le flacon, du plus présent au moins présent.</p><p class="inci" id="inci"></p></details>
+        </div>
+      </div>
+    </div>
+    <section class="rituel" aria-labelledby="t-rituel">
+      <h2 id="t-rituel"></h2>
+      <p class="chapo" id="c-rituel"></p>
+      <ol class="tuiles" id="rituel-l"></ol>
+      <p class="ligne-a" id="rituel-achat" hidden><button class="bouton fort" type="button" id="rituel-tout"></button><span id="rituel-prix"></span></p>
+    </section>
+    <section class="voisins" aria-labelledby="t-voisins">
+      <h2 id="t-voisins">Dans la même famille</h2>
+      <div class="grille" id="voisins"></div>
+    </section>
+  </div>
+</main>
+<div class="barre-achat" id="barre" hidden><p><b id="barre-nom"></b><span id="barre-prix"></span></p><button class="bouton" type="button" id="barre-ajouter">Ajouter au panier</button></div>
+<script type="module" src="js/soin.js"></script>
+</body>
+</html>

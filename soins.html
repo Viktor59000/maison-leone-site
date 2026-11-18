@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Les soins — Maison Léone</title>
+<meta name="description" content="Les 48 soins Maison Léone, à filtrer par famille, besoin ou plante.">
+<meta name="theme-color" content="#FCF6F0">
+<link rel="icon" href="assets/logo/favicon.ico" sizes="any">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="int">
+<noscript><p style="padding:6rem 1.5rem 2rem;max-width:40rem;margin:auto;font:1.1rem/1.5 sans-serif">Ce site a besoin de JavaScript pour afficher les soins. Activez-le dans votre navigateur, puis rechargez la page.</p></noscript>
+<main class="page" id="contenu">
+  <div class="interieur">
+    <h1 id="titre">Les soins</h1>
+    <p class="chapo" id="chapo">Quarante-huit soins. Choisissez par famille ou par besoin, ou commencez par ceux que l'on rachète le plus.</p>
+    <p class="fictif" id="note-ventes" hidden style="margin:-1rem 0 1.6rem">Classement inventé pour la maquette : la marque est fictive, aucun chiffre de vente n'existe.</p>
+    <div class="filtres" role="search" aria-label="Filtrer les soins">
+      <div class="groupe" id="f-selection"><span>Sélection</span></div>
+      <div class="groupe" id="f-famille"><span>Famille</span></div>
+      <details class="plus-f" id="plus-f"><summary>Affiner : besoin, plante, recherche</summary>
+      <div class="groupe" id="f-besoin"><span>Besoin</span></div>
+      <div class="groupe"><span>Plante</span><select class="simple" id="f-plante" aria-label="Filtrer par plante" style="width:auto"><option value="">Toutes les plantes</option></select>
+        <label class="champ" style="flex:1 1 14rem;max-width:22rem"><span class="cache">Chercher un soin</span><input type="search" id="f-texte" placeholder="Chercher un soin, une plante…"></label></div>
+      </details>
+    </div>
+    <div class="barre"><p id="compte" role="status" aria-live="polite"></p>
+      <label>Trier <select class="simple" id="tri"><option value="">les plus vendus d'abord</option><option value="famille">par famille</option><option value="prix">du moins cher au plus cher</option><option value="nom">par nom</option></select></label></div>
+    <ol class="tuiles" id="grille"></ol>
+    <div class="vide" id="vide" hidden><p>Aucun soin ne correspond à ces filtres.</p><button class="bouton second" type="button" id="effacer">Effacer les filtres</button></div>
+  </div>
+</main>
+<script type="module" src="js/soins.js"></script>
+</body>
+</html>

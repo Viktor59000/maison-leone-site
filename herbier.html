@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>L'herbier — Maison Léone</title>
+<meta name="description" content="L'herbier Maison Léone : de la plante vers les soins qui la contiennent.">
+<meta name="theme-color" content="#FCF6F0">
+<link rel="icon" href="assets/logo/favicon.ico" sizes="any">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="int">
+<noscript><p style="padding:6rem 1.5rem 2rem;max-width:40rem;margin:auto;font:1.1rem/1.5 sans-serif">Ce site a besoin de JavaScript pour afficher les soins. Activez-le dans votre navigateur, puis rechargez la page.</p></noscript>
+<main class="page" id="contenu">
+  <div class="interieur">
+    <h1>L'herbier</h1>
+    <p class="chapo">Chaque plante dessinée sur une étiquette est dans le flacon. Choisissez-en une : voici les soins qui la contiennent.</p>
+    <div class="herbier-g" id="plantes"></div>
+    <section class="resultat" id="resultat" aria-live="polite" hidden>
+      <h2 id="r-titre"></h2>
+      <p class="chapo" id="r-noms"></p>
+      <div class="grille" id="r-grille"></div>
+      <p style="margin-top:1.5rem"><a class="lien" id="r-lien" href="soins.html">Voir ces soins dans le catalogue</a></p>
+    </section>
+  </div>
+</main>
+<script type="module" src="js/herbier.js"></script>
+</body>
+</html>

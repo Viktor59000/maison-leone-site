@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mon compte — Maison Léone</title>
+<meta name="description" content="Votre compte Maison Léone : commandes et boutique préférée.">
+<meta name="theme-color" content="#FCF6F0">
+<link rel="icon" href="assets/logo/favicon.ico" sizes="any">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="int">
+<noscript><p style="padding:6rem 1.5rem 2rem;max-width:40rem;margin:auto;font:1.1rem/1.5 sans-serif">Ce site a besoin de JavaScript pour afficher les soins. Activez-le dans votre navigateur, puis rechargez la page.</p></noscript>
+<main class="page" id="contenu">
+  <div class="interieur">
+    <h1 id="bonjour">Mon compte</h1>
+    <p class="chapo">Retrouvez vos commandes et recommandez en deux clics.</p>
+    <div class="compte-g">
+      <div>
+        <div class="bloc"><h2 style="margin:0">Vous</h2>
+          <label class="champ">Prénom<input id="prenom" type="text" autocomplete="given-name"></label>
+          <label class="champ">Ma boutique<select id="boutique"><option value="">Aucune pour l'instant</option></select></label>
+          <p id="adresse" style="font-size:.93rem"></p></div>
+        <p class="fictif">Maquette : pas de mot de passe, pas de serveur. Ces informations restent dans ce navigateur. <button class="lien" type="button" id="oublier" style="font-weight:600">Tout effacer</button></p>
+      </div>
+      <div class="bloc"><h2 style="margin:0">Mes commandes</h2><div id="commandes"></div></div>
+    </div>
+  </div>
+</main>
+<script type="module" src="js/compte.js"></script>
+</body>
+</html>
