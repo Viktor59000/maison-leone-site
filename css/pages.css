@@ -12,7 +12,7 @@
   .bascule { display: block; }
   .tete .menu { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; gap: 0; margin: 0; padding: .4rem var(--marge) 1rem; background: var(--ivoire); color: var(--vert); box-shadow: 0 12px 24px -16px rgba(12, 66, 54, .5); }
   .tete.ouvert .menu { display: flex; } .tete .menu a { padding: .85rem 0; border-bottom: 1px solid var(--trait); font: 600 1.35rem var(--titres); }
-  .tete.ouvert { background: var(--ivoire); color: var(--vert); } body.sombre .tete.ouvert .marque .compo { display: block; } body.sombre .tete.ouvert .marque .sombre { display: none; }
+  .tete.ouvert { background: var(--ivoire); color: var(--vert); } body.sombre .tete.ouvert .marque .clair { display: block; } body.sombre .tete.ouvert .marque .sombre { display: none; }
   .outils { gap: 0; }
 }
 

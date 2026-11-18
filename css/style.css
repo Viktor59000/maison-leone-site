@@ -37,7 +37,7 @@ main, .pied { position: relative; z-index: 2; }
 /* ---------- en-tête ---------- */
 .tete { position: fixed; inset: 0 0 auto 0; z-index: 20; display: flex; align-items: center; gap: 2rem; padding: 1rem var(--marge); color: var(--encre); transition: background-color .3s ease; }
 .marque img { height: 2.75rem; width: auto; } .marque .sombre { display: none; }
-body.sombre .tete:not(.pose) .marque .compo { display: none; } body.sombre .tete:not(.pose) .marque .sombre { display: block; }
+body.sombre .tete:not(.pose) .marque .clair { display: none; } body.sombre .tete:not(.pose) .marque .sombre { display: block; }
 .menu { display: flex; gap: 1.75rem; margin-left: auto; font-size: .95rem; }
 .menu a { text-decoration: none; padding: .3rem 0; border-bottom: 1px solid transparent; }
 .menu a:hover { border-bottom-color: var(--terracotta); }
@@ -52,7 +52,7 @@ body.sombre .tete:not(.pose) .bouton { background: var(--ivoire); color: var(--v
 .choix { position: absolute; left: 50%; bottom: clamp(3.9rem, 8.6vh, 6rem); margin-left: calc(min(100% - 2rem, 38rem) / -2); display: flex; align-items: center; gap: clamp(.5rem, 2vw, 1.5rem); width: min(100% - 2rem, 38rem); justify-content: center; }
 .soin { flex: 1; min-width: 0; }
 .famille { font: 600 .76rem/1.3 var(--texte); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
-.soin h2 { font: 600 clamp(1.9rem, 3.2vw, 2.7rem)/1.05 var(--titres); margin: .2rem 0 .15rem; }
+.soin h2 { font: 600 clamp(1.9rem, 3.2vw, 2.7rem)/1.05 var(--titres); margin: .2rem 0 .15rem; } .accueil .famille { display: none; }
 .fonction { font: italic 400 1.05rem/1.35 var(--chapo); color: var(--doux); }
 .fleche { width: 2.9rem; height: 2.9rem; flex: none; border-radius: 50%; border: 1px solid currentColor; display: grid; place-items: center; opacity: .8; }
 .fleche:hover { opacity: 1; background: color-mix(in srgb, currentColor 10%, transparent); }
@@ -245,7 +245,6 @@ body.sombre .accueil .bouton { background: var(--ivoire); color: var(--vert); }
   .deux { grid-template-columns: 1fr; } .services { grid-template-columns: 1fr; } .portes .interieur { grid-template-columns: 1fr; } .suite { display: none; } .valeurs li { grid-template-columns: 7.5rem 1fr; }
   .fiche[open] { grid-template-columns: 1fr; overflow-y: auto; } .f-visuel { min-height: 12rem; padding: 1.2rem; } .f-visuel img { width: 7.5rem; } .f-texte { padding: 1.5rem 1.4rem; max-height: none; overflow: visible; }
   .familles .chapo { display: none; }
-  .accueil .famille { display: none; }
   .tuiles { grid-template-columns: 1fr 1fr; gap: 1.7rem .8rem; } .tuile b { font-size: 1.3rem; } .tuile i { font-size: .85rem; } .tuile .plus { flex: 1 1 100%; text-align: center; }
   .ventes .tuiles { display: flex; gap: .9rem; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: calc(var(--marge) * -1); padding-inline: var(--marge); scroll-padding-inline: var(--marge); scrollbar-width: none; }
   .ventes .tuile { flex: 0 0 62vw; scroll-snap-align: start; }
