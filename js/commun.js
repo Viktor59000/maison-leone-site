@@ -57,6 +57,17 @@ export function compositionClaire(p, { groupes = null, explications = false } = 
     `<div><dt>${GROUPES[g][0]}</dt><dd>${liste(noms)}${explications ? `<small>${GROUPES[g][1]}</small>` : ''}</dd></div>`).join('');
 }
 
+// ce que devient chaque contenant une fois vide (consignes de tri en vigueur en France : tous les emballages se trient)
+export const TRI = {
+  pompe: ['Flacon à pompe', 'Le flacon et sa pompe vont dans le bac de tri.'],
+  capsule: ['Flacon à capsule', 'Le flacon et son bouchon vont dans le bac de tri.'],
+  pipette: ['Flacon à pipette', 'Le flacon en verre va au conteneur à verre, la pipette dans le bac de tri.'],
+  pot: ['Pot', 'Le pot et son couvercle vont dans le bac de tri.'],
+  galet: ['Galet solide', 'Pas de flacon : l\u2019étiquette en papier va dans le bac de tri.'],
+};
+// les repères d'un soin : ce que le client veut savoir avant d'acheter
+export function reperesSoin(p) { return [p.vegan ? 'Vegan' : 'Contient de la propolis', '95 % d\u2019origine naturelle, au moins', 'Fabriqué en France']; }
+
 // la formule racontée en une respiration : la terre, les plantes, le parfum
 const NOMBRES = ['zéro', 'une', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix', 'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf', 'vingt'];
 const enumere = (noms, max = 4) => { const n = noms.slice(0, max).map((x) => x.split(',')[0]); return n.length > 1 ? `${n.slice(0, -1).join(', ')} et ${n.at(-1)}` : n[0]; };

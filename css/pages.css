@@ -57,7 +57,9 @@ label.champ { display: grid; gap: .35rem; font-weight: 600; color: var(--vert); 
 .infos .fonction { font-size: 1.25rem; margin-bottom: .8rem; }
 .infos .plantes-l { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 1.5rem; }
 .pastille { display: inline-flex; align-items: center; gap: .4rem; border-radius: 999px; padding: .28rem .8rem .28rem .35rem; background: var(--blush); color: var(--vert); font-size: .85rem; font-weight: 500; text-decoration: none; }
-.pastille img { width: 1.5rem; height: 1.9rem; object-fit: contain; } .pastille:hover { box-shadow: inset 0 0 0 1px var(--vert); }
+.pastille img { width: 1.5rem; height: 1.9rem; object-fit: contain; }
+.pastille.fait { background: none; box-shadow: inset 0 0 0 1px rgba(12, 66, 54, .3); padding: .28rem .8rem; cursor: default; } .pastille.fait:hover { box-shadow: inset 0 0 0 1px rgba(12, 66, 54, .3); }
+.infos .plantes-l.faits { margin-top: -1rem; } .pastille:hover { box-shadow: inset 0 0 0 1px var(--vert); }
 .achat { border-top: 1px solid var(--trait); border-bottom: 1px solid var(--trait); padding: 1.3rem 0; display: grid; gap: 1.1rem; }
 .prix { font: 600 2.1rem/1 var(--titres); color: var(--vert); } .prix small { font: 400 .88rem var(--texte); color: var(--sauge-foncee); margin-left: .6rem; }
 .choix-c { display: flex; flex-wrap: wrap; gap: .5rem; border: 0; padding: 0; margin: 0; } .choix-c legend { font-weight: 600; color: var(--vert); font-size: .92rem; margin-bottom: .5rem; padding: 0; }

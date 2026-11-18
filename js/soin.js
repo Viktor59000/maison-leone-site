@@ -1,6 +1,6 @@
 // Maison Léone — fiche d'un soin : visionneuse 3D, contenance, prix, panier, disponibilité en boutique.
 import { PRODUITS, BOUTIQUES, MOTIFS } from './data.js';
-import { $, el, entete, params, parCle, nomGamme, euros, panier, compte, stock, carteSoin, tuileSoin, rituel, meilleures, prixAuCent, annoncer, compositionClaire, recitFormule } from './commun.js';
+import { $, el, entete, params, parCle, nomGamme, euros, panier, compte, stock, carteSoin, tuileSoin, rituel, meilleures, prixAuCent, annoncer, compositionClaire, recitFormule, reperesSoin, TRI } from './commun.js';
 
 entete();
 const p = parCle[params.get('c')];
@@ -13,7 +13,10 @@ $('#fil-famille').textContent = nomGamme[p.gamme]; $('#fil-famille').href = `soi
 $('#famille').textContent = nomGamme[p.gamme]; $('#nom').textContent = p.nom; $('#fonction').textContent = p.fonction;
 if (p.rang) { $('#palme').textContent = `N° ${p.rang} des ventes`; $('#palme').hidden = false; }
 $('#pourqui').textContent = p.pourQui; $('#bloc-pourqui').hidden = !p.pourQui; $('#geste').textContent = p.geste;
-$('#precautions').textContent = p.precautions; $('#inci').textContent = p.inci; $('#clair').innerHTML = compositionClaire(p, { explications: true }); $('#recit').textContent = recitFormule(p);
+$('#precautions').textContent = p.precautions; $('#inci').textContent = p.inci; $('#clair').innerHTML = compositionClaire(p, { explications: true });
+$('#faits').innerHTML = reperesSoin(p).map((t) => `<span class="pastille fait" role="listitem">${t}</span>`).join('');
+$('#animal').textContent = `${p.vegan ? 'Aucun ingrédient d\u2019origine animale.' : 'La propolis est un produit de la ruche : ce soin n\u2019est pas vegan.'} Ni ce soin ni ses ingrédients ne sont testés sur les animaux, comme le veut la loi européenne.`;
+$('#tri').textContent = `${TRI[p.trois.flacon][1]} Videz bien le contenant, ne le rincez pas.`; $('#recit').textContent = recitFormule(p);
 p.motifs.filter((m) => MOTIFS[m]).forEach((m) => $('#plantes').append(el(`<a class="pastille" href="herbier.html?plante=${m}"><img src="assets/herbier/${m}.svg" alt="">${MOTIFS[m]}</a>`)));
 
 // ---------------------------------------------------------------- contenance, quantité, panier

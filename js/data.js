@@ -79,6 +79,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "125 ml",
@@ -190,6 +191,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -301,6 +303,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "100 ml",
@@ -406,6 +409,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -516,6 +520,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "125 ml",
@@ -638,6 +643,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": false,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -753,6 +759,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -853,6 +860,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "50 ml"
@@ -960,6 +968,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "50 ml"
@@ -1053,6 +1062,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -1148,6 +1158,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -1245,6 +1256,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -1344,6 +1356,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -1442,6 +1455,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -1536,6 +1550,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -1645,6 +1660,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -1739,6 +1755,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "125 ml",
@@ -1821,6 +1838,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "100 ml",
@@ -1934,6 +1952,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -2036,6 +2055,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des protéines de blé. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "100 ml"
@@ -2120,6 +2140,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "125 ml",
@@ -2206,6 +2227,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "30 ml"
@@ -2306,6 +2328,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -2418,6 +2441,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -2533,6 +2557,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des protéines de blé. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -2643,6 +2668,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -2752,6 +2778,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -2862,6 +2889,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -2968,6 +2996,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": false,
 "precautions": "Ne pas utiliser en cas d'allergie connue aux produits de la ruche. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -3057,6 +3086,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des protéines de blé. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "100 ml",
@@ -3152,6 +3182,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des protéines de blé. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "100 ml",
@@ -3245,6 +3276,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml"
@@ -3341,6 +3373,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -3446,6 +3479,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "125 ml",
@@ -3556,6 +3590,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "125 ml",
@@ -3680,6 +3715,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "125 ml",
@@ -3761,6 +3797,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "125 ml",
@@ -3873,6 +3910,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -3984,6 +4022,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Contient des huiles essentielles : déconseillé chez l'enfant et la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -4109,6 +4148,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -4227,6 +4267,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -4333,6 +4374,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante ni chez l'enfant de moins de 6 ans. Usage externe. Éviter le contact avec les yeux.",
 "contenances": [
 "250 ml",
@@ -4448,6 +4490,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux. Tenir hors de portée des enfants.",
 "contenances": [
 "125 g"
@@ -4549,6 +4592,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante (contient menthol et camphre). Usage externe. Éviter le contact avec les yeux. Tenir hors de portée des enfants.",
 "contenances": [
 "125 g"
@@ -4657,6 +4701,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux. Tenir hors de portée des enfants.",
 "contenances": [
 "125 g"
@@ -4748,6 +4793,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Déconseillé chez la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux. Tenir hors de portée des enfants.",
 "contenances": [
 "125 g"
@@ -4863,6 +4909,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": true,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante. Usage externe. Éviter le contact avec les yeux. Tenir hors de portée des enfants.",
 "contenances": [
 "125 g"
@@ -4956,6 +5003,7 @@ export const PRODUITS = [
 ]
 ]
 ],
+"vegan": false,
 "precautions": "Ne pas utiliser chez la femme enceinte ou allaitante, avant 12 ans, ni en cas d'allergie aux produits de la ruche. Usage externe. Éviter le contact avec les yeux. Tenir hors de portée des enfants.",
 "contenances": [
 "125 g"

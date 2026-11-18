@@ -33,6 +33,7 @@
         <h1 id="nom"></h1>
         <p class="fonction" id="fonction"></p>
         <div class="plantes-l" id="plantes"></div>
+        <div class="plantes-l faits" id="faits" role="list" aria-label="À savoir sur ce soin"></div>
         <div class="achat">
           <p class="prix"><span id="prix"></span><small id="au-cent"></small></p>
           <fieldset class="choix-c" id="contenances"><legend>Contenance</legend></fieldset>
@@ -57,7 +58,8 @@
           <details open id="bloc-pourqui"><summary>Pour qui</summary><p id="pourqui"></p></details>
           <details open><summary>Le geste</summary><p id="geste"></p></details>
           <details><summary>Précautions</summary><p id="precautions"></p></details>
-          <details open><summary>Ce qu'il y a dedans</summary><p class="entree-c" id="recit"></p><dl class="compo" id="clair"></dl></details>
+          <details><summary>Une fois le flacon vide</summary><p id="tri"></p></details>
+          <details open><summary>Ce qu'il y a dedans</summary><p class="entree-c" id="recit"></p><dl class="compo" id="clair"></dl><p id="animal" style="font-size:.93rem"></p></details>
           <details><summary>La liste de l'étiquette</summary><p style="font-size:.88rem;color:#4F5A3E;padding-bottom:.5rem">Les mêmes ingrédients sous leur nom officiel, tels qu'ils sont imprimés sur le flacon, du plus présent au moins présent.</p><p class="inci" id="inci"></p></details>
         </div>
       </div>
